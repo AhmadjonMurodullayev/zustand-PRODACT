@@ -1,4 +1,3 @@
-// store/useProduct.js
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 import { request } from "../config/request";
@@ -7,7 +6,7 @@ export const useProduct = create(
   persist(
     (set) => ({
       data: [],
-      addProduct: (newData) =>
+      addProduct: (newData) =>     
         set((state) => ({
           ...state,
           data: [...state.data, newData],

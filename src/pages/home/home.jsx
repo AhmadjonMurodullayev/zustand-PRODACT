@@ -39,6 +39,7 @@ export default function Home() {
               justifyContent: "center",
               gap: "20px",
               flexWrap: "wrap",
+              margin: "auto",
             }}
             width={"80%"}
             my={5}
@@ -48,6 +49,8 @@ export default function Home() {
               <Stack
                 key={label}
                 sx={{
+                  marginY: "50px",
+
                   color: "white",
                   backgroundColor: "black",
                   padding: "18px 20px",
@@ -55,17 +58,26 @@ export default function Home() {
                   textAlign: "center",
                   cursor: "pointer",
                   "&:hover": {
-                    backgroundColor: "#333",
+                    color: "black",
+                    backgroundColor: "white",
                   },
                 }}
               >
                 {label}
               </Stack>
             ))}
+            <Typography variant="h1" sx={{ textAlign: "center" }} color="white">
+              Explore the world’s leading design portfolios
+            </Typography>
+            <Typography variant="p" sx={{ textAlign: "center" , fontSize: "20px"}} color="white">
+              Millions of designers and agencies around the world showcase their
+              portfolio work on Dribbble - the home to the world’s best design
+              and creative professionals.
+            </Typography>
+      <Sorch />
           </Stack>
         </Container>
       </Stack>
-      <Sorch/>
       <Stack py={5}>
         <Container maxWidth="xl">
           <Stack
